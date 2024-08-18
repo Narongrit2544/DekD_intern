@@ -1,0 +1,189 @@
+
+/* BannerSlider.css */
+.slider-image{
+    width: auto;
+    height: 300px;
+    max-width:505px;
+}
+.custom-prev-arrow,
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; 
+  transition: opacity 0.3s ease; /* เพิ่ม transition effect */
+  opacity: 1; /* ตั้งค่าเริ่มต้นเป็น 1 (visible) */
+}
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  opacity: 0.8; /* ความโปร่งใสลดลงเล็กน้อยเมื่อ hover */
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+    right: 10px;
+}
+.Slider-next-banner,
+.Slider-prev-banner {    
+    width: 60px;
+    height: auto;
+}
+/*---------------------*/
+/*Bookmarkedlist*/
+.headerlist{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-left : 200px;
+  color: rgb(142, 142, 142);
+  font-size: 12px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+}
+
+.ListBook{
+  padding-left: 200px;
+  display:flex;
+  flex-wrap: wrap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* ปรับสไตล์ของปุ่ม Edit */
+.Edit-Button {
+  padding: 7px 15px; 
+  color: #828282;
+  background-color: #ffffff;
+  border: 1px solid #828282;
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  border-radius: 35px;
+  font-size: 12px;
+  
+}
+.Edit-Button:hover {
+  background-color: #cfcfcf;
+  border: 1px solid #cfcfcf;
+}
+
+/*---------------------*/
+
+/*Booklist*/
+.Book-list{
+  width: 350px;
+  height: 150px;
+  display: flex ;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  overflow:hidden;
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* เพิ่ม transition effect */
+  opacity: 1; /* ตั้งค่าเริ่มต้นเป็น 1 (visible) */
+  
+}
+.Book-list:hover{
+  opacity: 0.8; /* ความโปร่งใสลดลงเล็กน้อยเมื่อ hover */
+}
+
+/*CheckBox*/
+.checkBox{
+  margin-top: 5px;
+
+}
+.checkBox input[type='checkbox'] {
+  appearance: none; /* ไม่ให้ระบบดึงสไตล์มาใช้งานเอง */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px; /* กำหนดความกว้างของ checkbox */
+  height: 20px; /* กำหนดความสูงของ checkbox */
+  border: 1px solid #fd530b; /* กำหนดเส้นขอบ */
+  border-radius: 50%; /* ทำให้มีรูปร่างเป็นวงกลม */
+}
+
+.checkBox input[type='checkbox']:checked {
+  background-color: #fd530b; /* กำหนดสีพื้นหลังเมื่อ checkbox ถูกเลือก */
+}
+
+
+/*Info*/
+.Pic1{
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+ 
+} 
+.title,.author,.epison,.last-time{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Kanit', sans-serif;
+}
+.author,.epison,.last-time{
+  font-size: 14px;
+}
+
+.title{
+  font-size: 20px;
+  width: 200px;
+  height: 30.4px;
+}
+.info {
+  padding-left: 40px;
+}
+.epison{
+  margin-top: 50px;
+}
+.Icon-epison{
+  width: 13px;
+  height: 13px;
+  padding-right: 10px;
+  padding-left: 2px;
+}
+.Icon-save{
+  width: 17px;
+  height: 20px;
+  padding-right: 5px;
+}
+/*-------------------------*/
+
+
+/*------------400px -------------*/
+
+@media (max-width: 600px) {
+  .headerlist{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left : 10px;
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .ListBook{
+    padding-left: 20px;
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .slider-image{
+    height: 200px;
+    max-width:200px;
+}
+  .Slider-next-banner,
+  .Slider-prev-banner {    
+      width: 30px;
+      height: auto;
+  }
+  .slider-image{
+    width: auto;
+    height: 250px;
+    max-width:505px;
+  }
+}
+/*-------------------------*/
+
+
